@@ -11,17 +11,16 @@ button.onclick = function() {
 
 
 let httpRequest = new XMLHttpRequest();
-    httpRequest = function() {
+     httpRequest.onreadystatechange = function() {
         if(httpRequest.readyState === XMLHttpRequest.DONE) {
             if(httpRequest.status === 200) {
            let response = httpRequest.responseText;
            let paragraph = document.getElementById("paragraph");
-           paragraph.innerText = response;
-           console.log(response);     
-                
+           paragraph.innerText = response;   
+            }else {
+             
             }
         }
-    
-    httpRequest.open("GET", "data/layer.txt");
-    httpRequest.send();
 }
+httpRequest.open("GET", "data/layer.txt");
+    httpRequest.send();

@@ -9,9 +9,6 @@ button.onclick = function() {
      layer.classList.add("d-none");
 }
 
-
-
-
 let httpRequest = new XMLHttpRequest();
      httpRequest.onreadystatechange = function() {
         if(httpRequest.readyState === XMLHttpRequest.DONE) {

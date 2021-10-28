@@ -96,7 +96,12 @@ textarea {
   width: 35%;
   height: 300px;
 }
+.layer {
+  background-color: white;
+  width: 75%;
+  height: 250px;
 
+}
 
 
 

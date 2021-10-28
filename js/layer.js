@@ -1,9 +1,11 @@
-let body = document.getElementById("body");
+let header = document.getElementById("header");
+let main = document.getElementById("main")
 let layer = document.getElementById("layer");
 let button = document.getElementById("button");
 
 button.onclick = function() {
-     body.classList.remove("opacity-50"); 
+     header.classList.remove("opacity-50"); 
+     main.classList.remove("opacity-50");
      layer.classList.add("d-none");
 }
 

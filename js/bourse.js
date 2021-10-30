@@ -3,7 +3,6 @@ let httpRequest = new XMLHttpRequest();
         if(httpRequest.readyState === XMLHttpRequest.DONE) {
           if(httpRequest.status === 200) {
             let response = JSON.parse(httpRequest.responseText);
-            console.log(response["CAC40"]);
             let indiceCac = document.getElementById("indiceCac");
             let tauxCac = document.getElementById("tauxCac");
             let indiceSbf = document.getElementById("indiceSbf");
@@ -23,4 +22,3 @@ let httpRequest = new XMLHttpRequest();
     }
 httpRequest.open("GET", "data/bourse.json");
 httpRequest.send();
-console.log(httpRequest);

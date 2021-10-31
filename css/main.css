@@ -93,17 +93,25 @@ textarea {
 }
 .block {
   background-color: #737373;
-  width: 35%;
+
   height: 300px;
 }
 .layer {
   background-color: #737373;
   color: white;
   width: 75%;
-  height: 400px;
   z-index: 5;
 
 }
+
+@media (max-width: 600px) {
+  .blocks {
+    flex-direction: column;
+
+  }
+
+}
+
 
 
 

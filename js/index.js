@@ -1,12 +1,16 @@
 let header = document.getElementById("header");
-let main = document.getElementById("main")
+let main = document.getElementById("main");
+let footer = document.getElementById("footer");
 let layer = document.getElementById("layer");
 let button = document.getElementById("button");
 let lock = document.getElementsByClassName("lock");
 
+
+
 button.onclick = function() {
     header.classList.remove("opacity-50"); 
     main.classList.remove("opacity-50");
+    footer.classList.remove("opacity-50");
     layer.classList.add("d-none");
     lock[0].classList.remove("disabled");
     lock[0].classList.add("active");
@@ -14,8 +18,7 @@ button.onclick = function() {
     lock[1].classList.add("active");
     lock[2].classList.remove("disabled");
     lock[2].classList.add("active");
-    lock[3].classList.remove("disabled");
-    lock[3].classList.add("active");
+       
 }
 
 let httpRequest = new XMLHttpRequest();
@@ -24,7 +27,7 @@ let httpRequest = new XMLHttpRequest();
             if(httpRequest.status === 200) {
            let response = httpRequest.responseText;
            let paragraph = document.getElementById("paragraph");
-           paragraph.innerText = response;   
+           paragraph.innerText = response;    
             }else {
              
             }

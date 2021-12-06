@@ -93,7 +93,7 @@ textarea {
 }
 .block {
   background-color: #737373;
-
+  width: 300px;
   height: 300px;
 }
 .layer {
@@ -104,7 +104,7 @@ textarea {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 250px) {
   .blocks {
     flex-direction: column;
 
